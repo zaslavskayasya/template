@@ -96,6 +96,14 @@ img.animated.pulse {
     margin-left: 8px;
 }
 
+.form-control:focus{
+    background-color: #fff;
+    border-color: #040b00;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(33, 14, 1, 0.25);
+
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
