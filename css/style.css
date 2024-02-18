@@ -510,11 +510,17 @@ footer .list-group p{
 }
 
 .product-item{
-    transition: all ease 0.3s;
     cursor: pointer;
+    .img-fluid{
+        transition: all ease 0.3s;
+
+    }
 }
 .product-item:hover{
-    transform: translateY(-15px)
+    .img-fluid{
+        transform: translateY(-15px)
+
+    }
 }
 @media screen and (max-width: 760px){
   .hero-header .col-lg-6{
