@@ -518,8 +518,7 @@ footer .list-group p{
 }
 .product-item:hover{
     .img-fluid{
-        transform: translateY(-15px)
-
+        transform: translateY(-15px);
     }
 }
 @media screen and (max-width: 760px){
@@ -530,15 +529,19 @@ footer .list-group p{
     padding-top: 6rem;
     padding-bottom: 1rem;
   }
+  .hero-header .display-4 {
+    font-size: 21px;
+
+  }
   .mb-5.hero-header{
     margin-bottom: 1.5rem !important;
   }
   .py-5 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     }
     .p-3 {
-        padding: 1rem !important;
+        padding: 10px !important;
     }
     .g-5, .gy-5 {
         --bs-gutter-y: 1.5rem;
@@ -549,5 +552,16 @@ footer .list-group p{
     }
     .mb-5 {
         margin-bottom: 2rem !important;
+    }
+    .fw-light.text-danger.red{
+        font-weight: 800!important;
+        font-size: 15px;;
+
+    }
+    .list-group-item .mb-0{
+        font-size: 14px;
+    }
+    .min-marging .row>* {
+        margin-top: 10px;
     }
 }
