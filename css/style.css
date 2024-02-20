@@ -1,4 +1,7 @@
 /********** Template CSS **********/
+body, html{
+    overflow-x: hidden;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
