@@ -15,7 +15,9 @@ body, html{
     visibility: visible;
     opacity: 1;
 }
-
+.error {
+    border: 1px solid red;
+  }
 .back-to-top {
     position: fixed;
     display: none;
@@ -567,4 +569,8 @@ footer .list-group p{
     .min-marging .row>* {
         margin-top: 10px;
     }
+    .display-6{
+        font-size: 22px!Important;
+    }
+    
 }

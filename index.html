@@ -214,7 +214,7 @@
                             <p class="mb-2">Подушка для фанатів Stray Kids </p>
                             <h2 class="fw-bold text-uppercase mb-4">Акційна ціна</h2>
                             <h1 class="display-4 text-danger mb-4">400 ₴</h1>
-                            <h5>Якіні матеріали</h5>
+                            <h5>Якіcні матеріали</h5>
                             <p class="mb-4">Подушка зроблена з високоякісної тканини, яку легко прати. Зображення друкуємо з двох сторін Вашої подушки, тому вона виглядає бездоганно, як не крути )
                             </p>
                             <div class="row g-0 cdt mb-4">
@@ -485,32 +485,25 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
-
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Ваше ім’я</label>
-                  <input type="text" placeholder="Iм’я" class="form-control" id="exampleInputEmail1" aria-describedby="name">
-                </div>
-
-                <div class="mb-4">
-                  <label for="phone" class="form-label">Ваш телефон (у форматі (+380 50 123 45 67) </label>
-                  <input type="phone" oninput="validatePhone(this)" placeholder="093 124 45 67" class="form-control" id="phone">
-                </div>
-
-                <!-- <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Я даю згоду на </label>
-                </div> -->
-                <div class="d-grid gap-2">
-
-                    <button type="submit" class="btn btn-lg btn-dark">Замовити зі знижкою</button>
-                </div>
-              </form>
+            <div id="resultContainer"></div>
+            <div id="formContainer">
+                <form id="orderForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Ваше ім’я</label>
+                    <input type="text" placeholder="Iм’я" class="form-control" id="name" aria-describedby="name">
+                  </div>
+                  <div class="mb-4">
+                    <label for="phone" class="form-label">Ваш телефон (у форматі (+380 50 123 45 67)</label>
+                    <input type="text" oninput="validatePhone(this)" placeholder="093 124 45 67" class="form-control" id="phone">
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button type="button" onclick="submitForm()" class="btn btn-lg btn-dark">Замовити зі знижкою</button>
+                  </div>
+                </form>
+              </div>
+              
+              
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
       </div>
     </div>
   </div>
