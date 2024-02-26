@@ -108,34 +108,33 @@
 })(jQuery);
 
 function validatePhone(input) {
-    // Видаляємо всі символи, крім цифр і "+"
+
     input.value = input.value.replace(/[^0-9+]/g, '');
   }
   
   function submitForm() {
-    // Отримуємо значення полів
+
     var name = document.getElementById('name').value;
     var phone = document.getElementById('phone').value;
   
-    // Видаляємо клас помилки перед новою валідацією
+
     document.getElementById('name').classList.remove('error');
     document.getElementById('phone').classList.remove('error');
   
-    // Валідація телефону (має містити тільки цифри та "+")
+
     if (!/^[0-9+]+$/.test(phone) || phone.length < 8) {
       document.getElementById('phone').classList.add('error');
       document.getElementById('resultContainer').innerHTML = '<div class="alert alert-danger" role="alert">Помилка: Невірний формат телефону!</div>';
       return;
     }
   
-    // Валідація імені (не менше 2 символів)
+
     if (name.length < 2) {
       document.getElementById('name').classList.add('error');
       document.getElementById('resultContainer').innerHTML = '<div class="alert alert-danger" role="alert">Помилка: Ім\'я має бути не менше 2 символів!</div>';
       return;
     }
-  
-    // Валідація заповненості полів
+
     if (name === '' || phone === '') {
       if (name === '') {
         document.getElementById('name').classList.add('error');
@@ -147,7 +146,7 @@ function validatePhone(input) {
       return;
     }
   
-    // Якщо форма пройшла валідацію, виводимо повідомлення та приховуємо форму
+
     document.getElementById('formContainer').style.display = 'none';
     document.getElementById('resultContainer').innerHTML = '<div class="alert alert-success" role="alert">Дякуємо за замовлення, наш менеджер зв\'яжеться з вами за вказаним номером телефону: ' + ' ' + phone + '</div>';
 }
