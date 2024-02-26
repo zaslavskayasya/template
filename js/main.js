@@ -107,3 +107,16 @@
     });
 })(jQuery);
 
+function validatePhone(input) {
+    // Видаляємо всі символи, крім цифр
+    var phoneNumber = input.value.replace(/\D/g, '');
+
+    // Перевіряємо, чи є телефонний номер довжиною не менше 10 цифр
+    if (phoneNumber.length >= 10) {
+        // Забираємо червону обводку, якщо вона була встановлена раніше
+        input.style.border = '';
+    } else {
+        // Встановлюємо червону обводку, якщо номер телефону коротший за 10 цифр
+        input.style.border = '2px solid red';
+    }
+}
