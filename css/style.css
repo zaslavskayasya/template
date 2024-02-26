@@ -17,7 +17,10 @@ body, html{
 }
 .error {
     border: 1px solid red;
-  }
+}
+#orderForm input::placeholder {
+    color: rgba(202, 200, 200, 0.693);
+}
 .back-to-top {
     position: fixed;
     display: none;
