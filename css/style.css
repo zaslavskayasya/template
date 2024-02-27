@@ -20,6 +20,8 @@ body, html{
 }
 #orderForm input::placeholder {
     color: rgba(202, 200, 200, 0.693);
+    font-weight: 200;
+
 }
 .back-to-top {
     position: fixed;
