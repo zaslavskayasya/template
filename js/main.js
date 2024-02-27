@@ -87,6 +87,27 @@ countDownTimer();
   //     dotsData: true,
   // });
 
+
+
+  $('.main-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
     autoplay: false,
@@ -113,6 +134,7 @@ countDownTimer();
     },
   });
 })(jQuery);
+
 
 
 
