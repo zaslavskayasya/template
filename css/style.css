@@ -19,6 +19,52 @@ body, html{
     border: 1px solid red;
 }
 
+.main-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-carousel .owl-nav .owl-prev,
+.main-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #fff;
+    background: #dc3545;
+    transition: .5s;
+}
+
+.main-carousel .owl-nav .owl-prev:hover,
+.main-carousel .owl-nav .owl-next:hover {
+    color: var(--primary);
+    background: #dc3545;
+}
+
+.main-carousel .owl-item.center .testimonial-item {
+    background: #d05c32 !important;
+}
+
+.main-carousel .owl-nav{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+.main-carousel .owl-prev{
+    position: absolute;
+    left: 0px
+}
+
+.main-carousel .owl-next{
+    position: absolute;
+    right: 0px;
+} 
+
 .h5.text-dark del{
     font-weight: 100;
     color: #ccc;
