@@ -76,6 +76,11 @@ del{
 .hidden{
     display: none;
 }
+.product-item a img{
+    width: 100%;;
+    ,bottom: 20px;;
+}
+
 #orderForm input::placeholder {
     color: rgba(202, 200, 200, 0.693);
     font-weight: 200;
