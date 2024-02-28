@@ -18,13 +18,14 @@ body, html{
 .error {
     border: 1px solid red;
 }
-
+.main-carousel-mob .owl-nav,
 .main-carousel .owl-nav {
     margin-top: 30px;
     display: flex;
     justify-content: center;
 }
-
+.main-carousel-mob .owl-nav .owl-prev,
+.main-carousel-mob .owl-nav .owl-next,
 .main-carousel .owl-nav .owl-prev,
 .main-carousel .owl-nav .owl-next {
     margin: 0 12px;
@@ -39,27 +40,29 @@ body, html{
     background: #dc3545;
     transition: .5s;
 }
-
+.main-carousel-mob .owl-nav .owl-prev:hover,
+.main-carousel-mob .owl-nav .owl-next:hover,
 .main-carousel .owl-nav .owl-prev:hover,
 .main-carousel .owl-nav .owl-next:hover {
     color: var(--primary);
     background: #dc3545;
 }
-
+.main-carousel-mob .owl-item.center .testimonial-item,
 .main-carousel .owl-item.center .testimonial-item {
     background: #d05c32 !important;
 }
-
+.main-carousel-mob .owl-nav,
 .main-carousel .owl-nav{
     width: 100%;
     position: absolute;
     top: 40%;
 }
+.main-carousel-mob .owl-prev,
 .main-carousel .owl-prev{
     position: absolute;
     left: 0px
 }
-
+.main-carousel-mob .owl-next,
 .main-carousel .owl-next{
     position: absolute;
     right: 0px;
@@ -78,7 +81,7 @@ del{
 }
 .product-item a img{
     width: 100%;;
-    ,bottom: 20px;;
+    bottom: 20px;;
 }
 
 #orderForm input::placeholder {
@@ -640,5 +643,9 @@ footer .list-group p{
     .display-6{
         font-size: 22px!Important;
     }
-    
+    .main-carousel-mob .owl-nav .owl-prev, .main-carousel-mob .owl-nav .owl-next, .main-carousel .owl-nav .owl-prev, .main-carousel .owl-nav .owl-next{
+        width: 35px;
+        height: 35px;;
+        font-size: 14px;
+    }
 }
